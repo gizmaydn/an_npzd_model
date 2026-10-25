@@ -46,14 +46,14 @@ $$\frac{dN}{dt} = \text{Respiration}_P + \text{Respiration}_Z + \text{Mineraliza
 
 ### Key Formulations
 
-* **Light Limitation (Michaelis-Menten / Monod):**
-  $$\text{light\_lim} = \frac{I}{k_{sLight} + I}, \quad I(t) = 1 + 0.5 \left|\sin\left(\frac{\pi t}{365}\right)\right|$$
+* **Light Limitation (Michaelis–Menten / Monod):**
+  $$\text{light}_{\text{lim}} = \frac{I}{k_{\text{sLight}} + I}, \quad I(t) = 1 + 0.5 \left|\sin\left(\frac{\pi t}{365}\right)\right|$$
 
 * **Temperature Forcing (Eppley curve):**
   $$\text{temp}(t) = 2 + 18 \left|\sin\left(\frac{\pi t}{365}\right)\right|, \quad f(T) = \exp(0.063 \cdot T)$$
 
 * **Nutrient Uptake:**
-  $$\text{Uptake} = r_{\max} \cdot \text{light\_lim} \cdot \left(\frac{N}{k_n + N}\right) \cdot f(T) \cdot P$$
+  $$\text{Uptake} = r_{\max} \cdot \text{light}_{\text{lim}} \cdot \left(\frac{N}{k_n + N}\right) \cdot f(T) \cdot P$$
 
 * **Zooplankton Grazing (Ivlev formulation):**
   $$\text{Grazing} = g_{\max} \cdot \left(1 - e^{-I_v \cdot P}\right) \cdot Z \cdot f(T)$$
